@@ -1,0 +1,141 @@
+/* Basic reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #550000;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center; /* Align icon and text */
+  transition: background-color 0.3s;
+}
+
+.back-btn i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.back-btn:hover {
+  background-color: #700000;
+}
+
+.cashier {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  text-align: center;
+  color: #550000;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.cashier form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 40px; /* Increased gap */
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Adjust gap */
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 15px;
+  transform: scale(1.5); /* Bigger checkbox */
+}
+
+.checkbox-group label {
+  font-size: 20px; /* Larger font size */
+  color: #333;
+}
+
+.form-group label {
+  font-size: 20px; /* Larger font size */
+  color: #333;
+  margin-bottom: 12px; /* Increased gap */
+  display: block;
+}
+
+.form-group input[type="text"] {
+  padding: 16px;
+  font-size: 20px; /* Larger font size */
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box; /* Ensures padding does not affect width */
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus {
+  outline: none;
+  border-color: #550000; /* Focus border color */
+}
+
+.queue-btn {
+  background-color: #550000;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.queue-btn:hover {
+  background-color: #700000;
+}
+
+@media (max-width: 768px) {
+  .cashier {
+    padding: 25px;
+    width: 90%;
+  }
+
+  .form-group label {
+    font-size: 18px;
+  }
+
+  .form-group input[type="text"] {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .back-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

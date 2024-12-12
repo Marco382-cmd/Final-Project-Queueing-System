@@ -1,0 +1,181 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #550000;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #550000;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Buttons */
+button {
+    background-color: #550000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9a0d0d;
+}
+
+/* Alerts */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Form styling for input fields */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    input[type="text"], input[type="number"], select {
+        font-size: 1.2em;
+    }
+}
+/* Style for the table cell */
+td {
+    text-align: center; /* Center the content horizontally */
+    vertical-align: middle; /* Center the content vertically */
+    padding: 10px;
+}
+
+/* Style for the action div */
+.action {
+    display: inline-block; /* Align the content inline-block */
+    text-align: center; /* Ensure buttons inside the div are centered */
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Specific button color schemes */
+.notify {
+    background-color: #4CAF50; /* Green for Notify */
+    color: white;
+}
+
+.remove {
+    background-color: #f44336; /* Red for Remove */
+    color: white;
+}
+
+.delete {
+    background-color: #008CBA; /* Blue for Done */
+    color: white;
+}
+
+/* Button hover effects */
+.btn:hover {
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+/* Specific hover effects for each button */
+.notify:hover {
+    background-color: #45a049;
+}
+
+.remove:hover {
+    background-color: #e53935;
+}
+
+.delete:hover {
+    background-color: #007bb5;
+}
+
